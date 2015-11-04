@@ -248,6 +248,14 @@ config CPU_FREQ_GOV_INTELLIMM
 
           If in doubt, say N.
 
+config CPU_BOOST_DISABLE_INPUTBOOST
+	bool "Disable input boost"
+	depends on CPU_FREQ
+	help
+	  Disable touch input CPU freq. boost within CPU_BOOST
+
+	  If in doubt, say N.
+
 config CPUFREQ_HARDLIMIT
 	bool "CPU Frequency max. hardlimit"
 	default y
